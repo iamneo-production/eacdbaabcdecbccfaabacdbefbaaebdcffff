@@ -10,7 +10,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
-import java.util.
 
 public class AppTest {
 	ChromeOptions chromeOptions = new ChromeOptions();
@@ -24,7 +23,7 @@ public class AppTest {
 	@Test
 	public void testcase_1() throws InterruptedException
 	{
-		time.sleep(2);
+		Thread.sleep(3000);
 		driver.manage().window().maximize();
 		driver.get("https://flipkart.com");
 		List<WebElement> allLink = driver.findElements(By.tagName("a"));
