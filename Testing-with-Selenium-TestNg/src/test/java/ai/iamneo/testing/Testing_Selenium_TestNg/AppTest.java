@@ -2,8 +2,10 @@ package ai.iamneo.testing.Testing_Selenium_TestNg;
 
 import org.testng.annotations.Test;
 import java.net.URL;
-
+import java.util.List;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
@@ -24,19 +26,25 @@ public class AppTest {
 	@Test
 	public void testcase_1() throws InterruptedException //Go to Ebay
 	{
+		driver.get("https://www.flipkart.com");
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		System.out.println("Number of links on a page: " + links.size());
 		
-		String title = "Get the Title";
-		Assert.assertEquals(title, " ");
 	}
 
 	@Test
 	public void testcase_2() throws InterruptedException 
       {
 	       //write Your Code here to Login
-             int nlinks=10;//   //Get the Number of links
-		 int get = 0;
-		 Assert.assertEquals(get, nlinks);
-	}
+		   List<WebElement> links = driver.findElements(By.tagName("a"));
+
+		   for (WebElement link : links) {
+			   System.out.println("Link Text: " + link.getText());
+			   System.out.println("URL: " + link.getAttribute("href"));
+		   }
+	   }
+   
+	
 
 		
 	@AfterTest
@@ -45,3 +53,4 @@ public class AppTest {
 	}
 
 }
+
