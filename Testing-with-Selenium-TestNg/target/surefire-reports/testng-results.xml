@@ -2,38 +2,40 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-06T11:07:09 UTC" name="Suite" finished-at="2023-09-06T11:07:15 UTC" duration-ms="6341">
+  <suite started-at="2023-09-06T11:16:06 UTC" name="Suite" finished-at="2023-09-06T11:16:12 UTC" duration-ms="6325">
     <groups>
     </groups>
-    <test started-at="2023-09-06T11:07:09 UTC" name="Test" finished-at="2023-09-06T11:07:15 UTC" duration-ms="6341">
+    <test started-at="2023-09-06T11:16:06 UTC" name="Test" finished-at="2023-09-06T11:16:12 UTC" duration-ms="6325">
       <class name="ai.iamneo.testing.Testing_Selenium_TestNg.AppTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:07:09 UTC" name="beforeTest" finished-at="2023-09-06T11:07:11 UTC" duration-ms="2317" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:16:06 UTC" name="beforeTest" finished-at="2023-09-06T11:16:09 UTC" duration-ms="2557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:07:11 UTC" name="testcase_1" finished-at="2023-09-06T11:07:15 UTC" duration-ms="3907" status="FAIL">
+        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:16:09 UTC" name="testcase_1" finished-at="2023-09-06T11:16:12 UTC" duration-ms="3594" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
 from tab crashed
   (Session info: chrome=114.0.5735.133)
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'eacdbaabcdecbccfaabacdbefbaaebdcffff-0', ip: '10.80.24.95', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [78d0be1f07abaf0f939b409294e93d0f, get {url=https://flipkart.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.HLVOWB}, goog:chromeOptions: {debuggerAddress: localhost:42423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78d0be1f07abaf0f939b409294e93d0f]]>
+Command: [62f5ed2a39fb94fa153b3821e71a0a95, get {url=https://flipkart.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.TYKGy8}, goog:chromeOptions: {debuggerAddress: localhost:44675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62f5ed2a39fb94fa153b3821e71a0a95]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
 from tab crashed
   (Session info: chrome=114.0.5735.133)
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'eacdbaabcdecbccfaabacdbefbaaebdcffff-0', ip: '10.80.24.95', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [78d0be1f07abaf0f939b409294e93d0f, get {url=https://flipkart.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.HLVOWB}, goog:chromeOptions: {debuggerAddress: localhost:42423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78d0be1f07abaf0f939b409294e93d0f
+Command: [62f5ed2a39fb94fa153b3821e71a0a95, get {url=https://flipkart.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.TYKGy8}, goog:chromeOptions: {debuggerAddress: localhost:44675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62f5ed2a39fb94fa153b3821e71a0a95
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -84,25 +86,25 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_1 -->
-        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:07:15 UTC" name="testcase_2" finished-at="2023-09-06T11:07:15 UTC" duration-ms="14" status="FAIL">
+        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:16:12 UTC" name="testcase_2" finished-at="2023-09-06T11:16:12 UTC" duration-ms="87" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'eacdbaabcdecbccfaabacdbefbaaebdcffff-0', ip: '10.80.24.95', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [78d0be1f07abaf0f939b409294e93d0f, findElements {using=tag name, value=a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.HLVOWB}, goog:chromeOptions: {debuggerAddress: localhost:42423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78d0be1f07abaf0f939b409294e93d0f]]>
+Command: [62f5ed2a39fb94fa153b3821e71a0a95, findElements {using=tag name, value=a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.TYKGy8}, goog:chromeOptions: {debuggerAddress: localhost:44675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62f5ed2a39fb94fa153b3821e71a0a95]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'eacdbaabcdecbccfaabacdbefbaaebdcffff-0', ip: '10.80.24.95', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [78d0be1f07abaf0f939b409294e93d0f, findElements {using=tag name, value=a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.HLVOWB}, goog:chromeOptions: {debuggerAddress: localhost:42423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78d0be1f07abaf0f939b409294e93d0f
+Command: [62f5ed2a39fb94fa153b3821e71a0a95, findElements {using=tag name, value=a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.TYKGy8}, goog:chromeOptions: {debuggerAddress: localhost:44675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.95:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.95:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.95:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62f5ed2a39fb94fa153b3821e71a0a95
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,7 +158,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:07:15 UTC" name="afterTest" finished-at="2023-09-06T11:07:15 UTC" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-06T11:16:12 UTC" name="afterTest" finished-at="2023-09-06T11:16:12 UTC" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
