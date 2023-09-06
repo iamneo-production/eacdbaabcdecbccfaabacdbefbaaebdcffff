@@ -6,38 +6,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
-	public class AppTest {
+public class AppTest {
+	WebDriver driver = null;
+	String url="https://flipkart.com";
+	ChromeOptions options = new ChromeOptions();
+	
+	@BeforeTest
+	public void beforeTest() throws IOException{
+		System.setProperty("webdriver.chrome.driver", "/home/coder/project/workspace/chromedriver");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+	}
 
-		ChromeOptions chromeOptions = new ChromeOptions();
-		WebDriver driver = null;
-		String url=" https://flipkart.com";
-
-		@BeforeTest
-		public void beforeTest() throws Exception {
-			String Browser = "chrome";
-			
-			if (Browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "/Users/dharmateja/Downloads/DriversForEclipse/chromedriver");
-				driver = new ChromeDriver();
-			} else if (Browser.equalsIgnoreCase("firefox")) {
-				System.setProperty("webdriver.gecko.driver", "");
-				driver = new FirefoxDriver();
-			} else if (Browser.equalsIgnoreCase("edge")) {
-				System.setProperty("webdriver.edge.driver",
-						"/Users/dharmateja/Downloads/DriversForEclipse/edgedriver_mac64_m1/msedgedriver");
-				driver = new EdgeDriver();
-			} else {
-				driver = new SafariDriver();
-			}
-		}
 		@Test
 	public void testcase_1() throws InterruptedException
 	{
