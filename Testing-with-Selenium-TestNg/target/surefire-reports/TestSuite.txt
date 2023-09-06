@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.806 s <<< FAILURE! - in TestSuite
-ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_1  Time elapsed: 3.81 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.045 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2  Time elapsed: 1.866 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 unknown error: session deleted because of page crash
 from unknown error: cannot determine loading status
@@ -11,19 +11,9 @@ from tab crashed
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'eacdbaabcdecbccfaabacdbefbaaebdcffff-0', ip: '10.80.24.64', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [e0d14ae3b2ca88cafe10bfbd79138fac, get {url=https://flipkart.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.7SJ4eT}, goog:chromeOptions: {debuggerAddress: localhost:36853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.64:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.64:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.64:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e0d14ae3b2ca88cafe10bfbd79138fac
-	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_1(AppTest.java:27)
-
-ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2  Time elapsed: 3.012 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eacdbaabcdecbccfaabacdbefbaaebdcffff-0', ip: '10.80.24.64', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [e0d14ae3b2ca88cafe10bfbd79138fac, findElements {using=tag name, value=a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.7SJ4eT}, goog:chromeOptions: {debuggerAddress: localhost:36853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.64:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.64:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.64:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e0d14ae3b2ca88cafe10bfbd79138fac
-	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2(AppTest.java:35)
+Command: [78403ff790ef845e96d45e4a7e2acd32, getElementAttribute {id=FE9F7DB967DDC143CA6C229008DB99F5_element_107, name=href}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.M8IDTT}, goog:chromeOptions: {debuggerAddress: localhost:41335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.80.24.64:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.80.24.64:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.80.24.64:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on LINUX (78403ff790ef845e96d45e4a7e2acd32)] -> tag name: a]
+Session ID: 78403ff790ef845e96d45e4a7e2acd32
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2(AppTest.java:37)
 
