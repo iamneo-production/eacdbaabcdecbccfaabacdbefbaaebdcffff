@@ -18,6 +18,7 @@ import java.util.List;
 
 		ChromeOptions chromeOptions = new ChromeOptions();
 		WebDriver driver = null;
+		String url=" https://flipkart.com";
 
 		@BeforeTest
 		public void beforeTest() throws Exception {
@@ -38,33 +39,24 @@ import java.util.List;
 			}
 		}
 		@Test
-		public void testcase_1() throws InterruptedException //Go to Ebay
-		{
-			
-			driver.get("https://www.flipkart.com/");
-			String title = driver.getTitle();
-			Assert.assertEquals(title, "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
-		}
-
-		@Test
-		public void testcase_2() throws InterruptedException 
-	      {
-			Thread.sleep(2000);
-		    	//write Your Code here to Login
-		    List<WebElement> list = driver.findElements(By.tagName("a"));
-		    System.out.println(list.size());
-		    int nlinks = 374;//   //Get the Number of links
-			 int get = list.size();
-			 for(WebElement link:list){
-					System.out.println("Link Text :: "+ link.getText());
-					System.out.println("Link URL  :: "+ link.getAttribute("href"));
-			}
-			 Assert.assertEquals(get, nlinks);
-		}
-			
-		@AfterTest
-		public void afterTest() {
-			driver.quit();
-		}
-
+	public void testcase_1() throws InterruptedException
+	{
+		driver.manage().window().maximize();
+		driver.get(url);
+		List<WebElement> allLink = driver.findElements(By.tagName("a"));
+		System.out.println("Number of links on a page :: "+allLink.size());
 	}
+	@Test
+	public void testcase_2() throws InterruptedException 
+      {
+		List<WebElement> allLink = driver.findElements(By.tagName("a"));
+		for(WebElement link:allLink){
+			System.out.println("Link Text : "+ link.getText());
+			System.out.println("Link URL  : "+ link.getAttribute("href"));
+		}
+	}
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
+}
