@@ -17,7 +17,7 @@ public class AppTest {
 	ChromeOptions options = new ChromeOptions();
 	@BeforeTest
 	public void beforeTest() throws IOException{
-		//System.setProperty("webdriver.chrome.driver", "/home/coder/project/workspace/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/home/coder/project/workspace/chromedriver");
 		driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
 	}
 	@Test
