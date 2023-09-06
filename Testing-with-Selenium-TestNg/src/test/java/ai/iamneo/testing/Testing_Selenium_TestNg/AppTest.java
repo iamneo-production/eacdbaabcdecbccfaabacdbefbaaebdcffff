@@ -14,7 +14,6 @@ import org.testng.annotations.AfterTest;
 public class AppTest {
 	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = null;
-	String url="https://flipkart.com";
 
 	@BeforeTest
 	public void beforeTest() throws Exception {
@@ -25,7 +24,7 @@ public class AppTest {
 	public void testcase_1() throws InterruptedException
 	{
 		driver.manage().window().maximize();
-		driver.get(url);
+		driver.get("https://flipkart.com");
 		List<WebElement> allLink = driver.findElements(By.tagName("a"));
 		System.out.println("Number of links on a page :: "+allLink.size());
 	}
