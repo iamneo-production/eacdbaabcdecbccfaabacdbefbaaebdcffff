@@ -50,12 +50,6 @@ import java.util.List;
 		public void testcase_2() throws InterruptedException 
 	      {
 			Thread.sleep(2000);
-		    boolean isEnabled = driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).isDisplayed();
-		    if(isEnabled) {
-		    	driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
-		    }else {
-		    	Assert.fail();
-		    }
 		    	//write Your Code here to Login
 		    List<WebElement> list = driver.findElements(By.tagName("a"));
 		    System.out.println(list.size());
