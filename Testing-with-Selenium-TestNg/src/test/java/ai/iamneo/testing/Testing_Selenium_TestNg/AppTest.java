@@ -12,13 +12,14 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 
 public class AppTest {
+	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = null;
 	String url="https://flipkart.com";
-	ChromeOptions options = new ChromeOptions();
+
 	@BeforeTest
-	public void beforeTest() throws IOException{
-		//System.setProperty("webdriver.chrome.driver", "/home/coder/project/workspace/chromedriver");
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+	public void beforeTest() throws Exception {
+		
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 	}
 	@Test
 	public void testcase_1() throws InterruptedException
