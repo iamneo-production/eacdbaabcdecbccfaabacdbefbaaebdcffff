@@ -23,6 +23,7 @@ public class AppTest {
 	@Test
 	public void testcase_1() throws InterruptedException
 	{
+		time.sleep(2);
 		driver.manage().window().maximize();
 		driver.get("https://flipkart.com");
 		List<WebElement> allLink = driver.findElements(By.tagName("a"));
@@ -31,6 +32,7 @@ public class AppTest {
 	@Test
 	public void testcase_2() throws InterruptedException 
       {
+		Thread.sleep(3000);
 		List<WebElement> allLink = driver.findElements(By.tagName("a"));
 		for(WebElement link:allLink){
 			System.out.println("Link Text : "+ link.getText());
